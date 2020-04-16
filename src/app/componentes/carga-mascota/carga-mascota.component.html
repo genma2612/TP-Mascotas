@@ -1,5 +1,7 @@
 <div id="carga" class="container">
-        <h2>CARGA DE MASCOTAS</h2>
+        <h2>CARGA DE MASCOTAS 
+            <input type="button" value="Borrar localStorage" (click)="limpiar()">
+        </h2>
             <p>NOMBRE:  <input type="text" id="nombre" name="nombre" [(ngModel)]="nombre"></p>
             <p>TIPO:
                 <select [(ngModel)]="tipo" id="tipo" name="tipo" >

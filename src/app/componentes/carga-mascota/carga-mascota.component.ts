@@ -27,4 +27,10 @@ export class CargaMascotaComponent implements OnInit {
     window.localStorage.setItem('mascotas', JSON.stringify(this.mascotas));
   }
 
+  public limpiar()
+  {
+    localStorage.removeItem('mascotas');
+    location.reload();
+  }
+
 }
