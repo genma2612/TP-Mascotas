@@ -1,0 +1,5 @@
+<app-listado [mascota]="mascota" (mostrar)="MostrarDetalles()"></app-listado>
+<div *ngIf="mostrar == true">
+<h4 style={{mascota.color}}>{{mascota.tipo}}</h4>
+<img [src]="mascota.imagen">
+</div>

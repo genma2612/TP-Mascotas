@@ -1,0 +1,16 @@
+<div id="carga" class="container">
+        <h2>CARGA DE MASCOTAS</h2>
+            <p>NOMBRE:  <input type="text" id="nombre" name="nombre" [(ngModel)]="nombre"></p>
+            <p>TIPO:
+                <select [(ngModel)]="tipo" id="tipo" name="tipo" >
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="pez">Pez</option>
+                </select>
+            </p>
+            <p>FOTO:  <input type="text" [(ngModel)]="imagen"></p>
+            <p><input type="button" value="Cargar Mascota" (click)="enviar($event)"></p>
+</div>
+<div *ngFor="let mascota of mascotas; index as indice">
+    <app-mascota [mascota]="mascota"></app-mascota>
+</div>
